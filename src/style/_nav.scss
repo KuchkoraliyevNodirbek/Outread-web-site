@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+// background-color: black;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+// }
+// .navbar{
+//   background-color:black;
+// }
+.logoicon {
+    padding-top: 20px;
+    width: 200px;
+  }
+
+
+
+.Navbar {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  background-color: black;
+ 
+}
+.logo {
+  padding-top: 20px;
+  width: 200px;
+}
+.navright {
+  margin: 40px;
+  ul {
+    display: flex;
+    font-size: 12px;
+    li {
+      border-radius: 3px;
+      
+      padding: 10px;
+      list-style-type: none;
+    }
+  }
+
+  .link {
+   
+    text-decoration: none;
+    color: white;
+    
+    transition: .5s;
+   
+
+
+   
+  }
+  li:hover{
+    background-color: rgb(62, 57, 57);
+  
+  }
+  .link:hover {
+    color: rgb(204, 133, 20);
+  }
+}
+
+.menu{
+  
+position: absolute;
+top: 30px;
+right: 20px;
+
+display: none;
+ 
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  span{
+    height:0.4em;
+    width: 100%;
+    background-color: rgb(203, 201, 198);;
+    border-radius: 3px;
+  }
+}
+@media (max-width:800px){
+  .logo {
+    padding-top: 30px;
+    width: 140px;}
+    ul{
+      font-size: 8px;
+    }
+}
+
+@media (max-width:600px) {
+ 
+  .menu{
+    display: flex;
+  }
+
+  .navright{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-right:25%;
+    ul{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+
+    }
+    ul.open{
+display: flex;
+    }
+    li{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
